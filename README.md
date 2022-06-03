@@ -1,4 +1,7 @@
-# Monitoring SlotsBehind for your Solana RPC node
+# Monitoring SlotsBehind for your Solana RPC node with Garafana and Prometheus
+
+
+This guide aims to help export your node's slotsBehind stats in near real-time so you can monitor with Grafana.
 
 #
 ## Step 1 - Create a directory for the nodeexperter Textfile Collector to read
