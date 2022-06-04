@@ -62,6 +62,9 @@ e.g. docker-compse.yml file snippet:
 		  - '--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)'
 	[...]
 ```
+Once you've made the changes to the docker-comse.yml filel, restart the containers to make the changes take effect:
+
+	sudo docker-compose up -d
 
 #
 ## Check the stats have nmade it to Grafana
