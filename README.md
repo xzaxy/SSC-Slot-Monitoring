@@ -1,4 +1,4 @@
-# Monitoring SlotsBehind for your Solana RPC node with Garafana and Prometheus
+# Monitoring SlotsBehind for your Solana RPC node with Grafana and Prometheus
 
 
 This guide aims to help export your node's slotsBehind stats in near real-time so you can monitor with Grafana.
@@ -67,7 +67,7 @@ Once you've made the changes to the docker-comse.yml filel, restart the containe
 	sudo docker-compose up -d
 
 #
-## Step 4 - Check the stats have made it to Grafana
+## Step 4 - Check in Grafana that the stats have made it to Prometheus 
 In Grafana, after 5 or so minutes we can verify that the stats are visible.
 
 Open Explorer, and begin typing `node_sol`, if everything is working, you should see the new node name we're collecting autofill:
