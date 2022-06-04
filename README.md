@@ -30,7 +30,7 @@ In the `directory_size` file paste the following  (`*/5` means I have mine updat
     */5 * * * * root du -sb /mt/accounts /mt/ledger/validator-ledger/rocksdb /mt/ledger/validator-ledger/accounts_index | sed -ne 's/^\([0-9]\+\)\t\(.*\)$/node_directory_size_bytes{directory="\2"} \1/p' > /var/lib/node_exporter/textfile_collector/directory_size.prom.$$ && mv /var/lib/node_exporter/textfile_collector/directory_size.prom.$$ /var/lib/node_exporter/textfile_collector/directory_size.prom`
 
 #
-## Modify the nodeExporter config in docker-compose.yml:
+## Step 3 - Modify the nodeExporter config in docker-compose.yml:
 
     sudo nano docker-compose.yml
 
@@ -67,7 +67,7 @@ Once you've made the changes to the docker-comse.yml filel, restart the containe
 	sudo docker-compose up -d
 
 #
-## Check the stats have nmade it to Grafana
+## Step 4 - Check the stats have nmade it to Grafana
 In Grafana, after 5 or so minutes we can verify that the stats are visible.
 
 Open Explorer, and begin typing `node_sol`, if everything is working, you should see the new node name we're collecting autofill:
