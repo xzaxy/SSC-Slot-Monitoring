@@ -62,7 +62,7 @@ e.g. docker-compse.yml file snippet:
 		  - '--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)'
 	[...]
 ```
-Once you've made the changes to the docker-comse.yml filel, restart the containers to make the changes take effect:
+Once you've made the changes to the docker-comse.yml file, change  directory to where your docker-compose.yml resides and restart the containers to make the changes take effect (e.g. `cd ~/shadow-monitoring`):
 
 	sudo docker-compose up -d
 
