@@ -67,7 +67,7 @@ Once you've made the changes to the docker-comse.yml filel, restart the containe
 	sudo docker-compose up -d
 
 #
-## Step 4 - Check the stats have nmade it to Grafana
+## Step 4 - Check the stats have made it to Grafana
 In Grafana, after 5 or so minutes we can verify that the stats are visible.
 
 Open Explorer, and begin typing `node_sol`, if everything is working, you should see the new node name we're collecting autofill:
